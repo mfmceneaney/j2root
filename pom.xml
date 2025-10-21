@@ -5,6 +5,13 @@
     <artifactId>JRoot</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.jlab</groupId>
+            <artifactId>coat-libs</artifactId>
+            <version>13.4.0</version> <!-- or ${COATJAVA_VERSION} -->
+        </dependency>
+    </dependencies>
 
     <name>JRoot</name>
     <properties>
