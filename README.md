@@ -8,6 +8,16 @@ cd j2root
 mvn package
 scons build/native
 scons
+Run the new installation:
+```bash
+git clone https://github.com/mfmceneaney/j2root.git
+cd j2root
+javac -h build/native src/main/java/org/jlab/jroot/JRootJNI.java
+sed -i.bak 's;^env.JavaH;#env.JavaH;g' sconscript
+scons
+./install_coatjava.sh
+mvn package
+sed -i.bak 's;^set sourced;set sourced=\(\"source\" \"j2root/setup.csh\"\)#set sourced ; g' setup.csh
 ```
 4. Set environment variables:
   * `source setup.sh` in bash
