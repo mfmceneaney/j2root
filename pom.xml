@@ -5,21 +5,6 @@
     <artifactId>JRoot</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>org.jlab.coat</groupId>
-            <artifactId>coat-libs</artifactId>
-            <version>6.3.1-SNAPSHOT</version>
-            <type>jar</type>
-        </dependency>
-    </dependencies> 
-
-    <repositories>
-        <repository>
-            <id>clas12maven</id>
-            <url>https://clasweb.jlab.org/clas12maven</url>
-        </repository>
-    </repositories>
 
     <name>JRoot</name>
     <properties>
